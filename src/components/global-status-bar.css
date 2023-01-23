@@ -1,0 +1,49 @@
+.Global-status-bar__menu {
+  padding-bottom: 1.125rem;
+}
+
+.Global-status-bar__menu::part(popup-content),
+.Global-status-bar__sub-menu::part(container),
+.Global-status-bar__sub-menu::part(popup-content) {
+  width: 10rem;
+}
+
+.Global-status-bar__list {
+  width: 28rem;
+  background-color: var(--color-background-surface-default);
+}
+
+.Global-status-bar__list header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-background-surface-header);
+  padding: var(--spacing-2) var(--spacing-4);
+}
+
+.Global-status-bar__list ul {
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.Global-status-bar__list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-1) var(--spacing-4);
+  border-top: 1px solid var(--color-text-inverse);
+}
+
+.Global-status-bar__list li:hover {
+  background-color: var(--color-background-surface-hover);
+}
+
+.Global-status-bar__list rux-radio-group::part(radiogroup) {
+  box-shadow: none;
+}
+
+.Global-status-bar__icons {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 26.375rem;
+}
